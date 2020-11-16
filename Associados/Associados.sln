@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Associados.Core", "Associados.Core\Associados.Core.csproj", "{D2DF0461-5AB5-4B95-BCAA-FF30D3C4DC83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Associados.Data", "Associados.Data\Associados.Data.csproj", "{19067A43-EEA0-41A9-BADA-FE6AD9215262}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2DF0461-5AB5-4B95-BCAA-FF30D3C4DC83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2DF0461-5AB5-4B95-BCAA-FF30D3C4DC83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2DF0461-5AB5-4B95-BCAA-FF30D3C4DC83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2DF0461-5AB5-4B95-BCAA-FF30D3C4DC83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19067A43-EEA0-41A9-BADA-FE6AD9215262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19067A43-EEA0-41A9-BADA-FE6AD9215262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19067A43-EEA0-41A9-BADA-FE6AD9215262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19067A43-EEA0-41A9-BADA-FE6AD9215262}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
