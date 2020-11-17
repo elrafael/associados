@@ -46,9 +46,11 @@
     <Compile Include="IAssociadoRepository.cs" />
     <Compile Include="IMoradaRepository.cs" />
     <Compile Include="IQuotaRepository.cs" />
+    <Compile Include="IUserRepository.cs" />
     <Compile Include="Morada.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quota.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

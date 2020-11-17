@@ -12,6 +12,7 @@ namespace Associados.Core
         void Edit(Morada m);
         void Remove(int Id);
         IEnumerable<Morada> List();
+        IEnumerable<Morada> ListByTipoVia(string TipoVia);
         Morada findById(int Id);
     }
 }
