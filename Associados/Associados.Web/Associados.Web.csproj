@@ -129,6 +129,7 @@
     <Compile Include="Controllers\AssociadoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MoradasController.cs" />
+    <Compile Include="Controllers\QuotasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -180,6 +181,11 @@
     <Content Include="Views\Moradas\Details.cshtml" />
     <Content Include="Views\Moradas\Edit.cshtml" />
     <Content Include="Views\Moradas\Index.cshtml" />
+    <Content Include="Views\Quotas\Create.cshtml" />
+    <Content Include="Views\Quotas\Delete.cshtml" />
+    <Content Include="Views\Quotas\Details.cshtml" />
+    <Content Include="Views\Quotas\Edit.cshtml" />
+    <Content Include="Views\Quotas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
