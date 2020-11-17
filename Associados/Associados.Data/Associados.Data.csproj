@@ -51,12 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssociadoContext.cs" />
     <Compile Include="AssociadoDbInit.cs" />
     <Compile Include="AssociadoRepository.cs" />
-    <Compile Include="MoradaContext.cs" />
+    <Compile Include="Context.cs" />
     <Compile Include="MoradaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuotaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

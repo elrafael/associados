@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Associados.Data
 {
-    public class AssociadoDbInit : DropCreateDatabaseIfModelChanges<AssociadoContext>
+    public class AssociadoDbInit : DropCreateDatabaseIfModelChanges<Context>
     {
-        protected override void Seed(AssociadoContext context)
+        protected override void Seed(Context context)
         {
             context.Associados.Add(new Associado
             {

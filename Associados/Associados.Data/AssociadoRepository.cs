@@ -10,7 +10,7 @@ namespace Associados.Data
     public class AssociadoRepository : IAssociadoRepository
     {
 
-        AssociadoContext context = new AssociadoContext();
+        Context context = new Context();
         public void Add(Associado a)
         {
             context.Associados.Add(a);

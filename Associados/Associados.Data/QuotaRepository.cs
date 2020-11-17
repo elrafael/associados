@@ -7,35 +7,35 @@ using System.Threading.Tasks;
 
 namespace Associados.Data
 {
-    public class MoradaRepository : IMoradaRepository
+    public class QuotaRepository : IQuotaRepository
     {
         Context context = new Context();
-        public void Add(Morada m)
+        public void Add(Quota m)
         {
-            context.Morada.Add(m);
+            context.Quotas.Add(m);
             context.SaveChanges();
         }
 
-        public void Edit(Morada m)
+        public void Edit(Quota m)
         {
             context.Entry(m).State = System.Data.Entity.EntityState.Modified;
         }
 
         public void Remove(int Id)
         {
-            Morada a = context.Morada.Find(Id);
-            context.Morada.Remove(a);
+            Quota a = context.Quotas.Find(Id);
+            context.Quotas.Remove(a);
             context.SaveChanges();
         }
 
-        public IEnumerable<Morada> List()
+        public IEnumerable<Quota> List()
         {
-            return context.Morada;
+            return context.Quotas;
         }
 
-        public Morada findById(int Id)
+        public Quota findById(int Id)
         {
-            var result = (from r in context.Morada where r.Id == Id select r).FirstOrDefault();
+            var result = (from r in context.Quotas where r.Id == Id select r).FirstOrDefault();
 
             return result;
         }

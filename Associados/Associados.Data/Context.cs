@@ -8,13 +8,11 @@ using System.Threading.Tasks;
 
 namespace Associados.Data
 {
-    public class AssociadoContext: DbContext
+    public class Context : DbContext
     {
-        public AssociadoContext() : base("name=gestorAssociadosConnectionString")
-        {
-
-        }
-
+        public Context() : base("name=gestorAssociadosConnectionString") { }
         public DbSet<Associado> Associados { get; set; }
+        public DbSet<Quota> Quotas { get; set; }
+        public DbSet<Morada> Morada { get; set; }
     }
 }
