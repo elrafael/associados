@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Associados.Core;
 using Associados.Data;
+using System.Web.Security;
 
 namespace Associados.Web.Controllers
 {
@@ -15,15 +16,22 @@ namespace Associados.Web.Controllers
     {
         private MoradaRepository db = new MoradaRepository();
 
-        // GET: Moradas
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.List());
         }
 
+        public ActionResult GetMoradas()
+        {
+            var ListaMoradas = db.List().ToList();
+            return Json(new { data = ListaMoradas }, JsonRequestBehavior.AllowGet);
+        }
+
         // GET: Moradas/Details/5
         public ActionResult Details(int? id)
         {
+            FormsAuthentication.SignOut();
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);

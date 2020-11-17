@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using Associados.Core;
 using Associados.Data;
 
@@ -18,6 +19,7 @@ namespace Associados.Web.Controllers
         // GET: Quotas
         public ActionResult Index()
         {
+            FormsAuthentication.SetAuthCookie("rafael", true);
             return View(db.List());
         }
 
