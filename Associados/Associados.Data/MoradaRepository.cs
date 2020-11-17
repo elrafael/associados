@@ -33,6 +33,13 @@ namespace Associados.Data
             return context.Morada;
         }
 
+        public IEnumerable<Morada> ListByTipoVia(string TipoVia)
+        {
+            var result = (from r in context.Morada where r.TipoVia == TipoVia select r).ToList();
+
+            return result;
+        }
+
         public Morada findById(int Id)
         {
             var result = (from r in context.Morada where r.Id == Id select r).FirstOrDefault();

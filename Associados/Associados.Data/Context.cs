@@ -14,5 +14,6 @@ namespace Associados.Data
         public DbSet<Associado> Associados { get; set; }
         public DbSet<Quota> Quotas { get; set; }
         public DbSet<Morada> Morada { get; set; }
+        public DbSet<User> User { get; set; }
     }
 }
