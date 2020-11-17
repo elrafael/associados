@@ -54,6 +54,8 @@
     <Compile Include="AssociadoContext.cs" />
     <Compile Include="AssociadoDbInit.cs" />
     <Compile Include="AssociadoRepository.cs" />
+    <Compile Include="MoradaContext.cs" />
+    <Compile Include="MoradaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
